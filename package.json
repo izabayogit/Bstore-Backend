@@ -2,13 +2,16 @@
   "name": "bookstore-backend",
   "version": "1.0.0",
   "module": "CommonJS",
-
+  "engines" : { 
+   
+    "node" : "18.18.0"
+  },
   "description": "",
   "main": "src/index.ts",
   "esModuleInterop": true,
   "target": "esnext",
   "scripts": {
-    "start": "node dist/index.js",
+    "start": "node dist/src/index.js",
     "dev": " nodemon src/index.ts",
     "seed": "ts-node  --esm seedscript.ts",
     "build": "tsc -p .",

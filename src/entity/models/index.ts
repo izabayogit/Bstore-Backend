@@ -11,7 +11,7 @@ const sequelize = new Sequelize({
   username: process.env.DATABASE_USER,
   password: process.env.DATABASE_PASSWORD,
   host: process.env.HOST,
-  port:process.env.DB_PORT,
+  port:56424,
   dialect: 'postgres', // or your preferred database dialect
 });
 
