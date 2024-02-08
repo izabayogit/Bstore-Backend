@@ -13,9 +13,9 @@ class BookService {
   }
 
   // Get all books
-  async getAllBooks(pageNumber,pageSize): Promise<BookAttributes[]> {
+  async getAllBooks(pageNumber,pageSize,tagName): Promise<BookAttributes[]> {
     try {
-      const books = await BookRepository.getAllBooks(pageNumber,pageSize);
+      const books = await BookRepository.getAllBooks(pageNumber,pageSize, tagName);
       return books;
     }  catch (error: any) {
       return error.message;
@@ -27,15 +27,6 @@ class BookService {
     try {
       const book = await BookRepository.getBookById(bookId);
       return book;
-    }  catch (error: any) {
-      return error.message;
-    }
-  }
-
-  async getBookByTag(taag: string, pageNumber, pageSize): Promise<BookAttributes[]> {
-    try {
-    const book = await BookRepository.getBookByTag(taag, pageNumber, pageSize);
-          return book;
     }  catch (error: any) {
       return error.message;
     }

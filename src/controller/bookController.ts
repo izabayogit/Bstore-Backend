@@ -16,8 +16,9 @@ class BookController {
   async getAllBooks(req:Request, res:Response): Promise<void> { 
     const pageNumber: number = parseInt( req.query.pageNumber as string);
     const pageSize: number = parseInt( req.query.pageSize as string);
+    const tag: string =  req.query.tag as string;
     try{
-      const books = await BookService.getAllBooks(pageNumber, pageSize);
+      const books = await BookService.getAllBooks(pageNumber, pageSize, tag);
        res.status(200).json(books)
     }
     catch(error){
@@ -29,28 +30,6 @@ class BookController {
     try{
       const foundBook = await BookService.getBookById( parseFloat(req.params.id));
        res.status(200).json(foundBook)
-    }catch(error){
-     res.status(500).json({errr: error.message})
-    }
-    
-  }
-
-  async getBookByTagController(req:Request, res:Response): Promise<void> {
-    const pageNumber: number = parseInt( req.query.pageNumber as string);
-    const pageSize: number = parseInt( req.query.pageSize as string);
-    const tag: string =  req.query.tag as string;
-    try{
-      const foundBook = await BookService.getBookByTag(tag, pageNumber,pageSize);
-      // if(foundBook){
-        res.status(200).json(foundBook)
-      // }else{
-      //   res.status(400).json({
-      //     status:400,
-      //     message: `book with ${req.body.tag} tag not found`
-      //   }
-      //   )
-  
-     
     }catch(error){
      res.status(500).json({errr: error.message})
     }

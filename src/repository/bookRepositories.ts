@@ -13,18 +13,29 @@ class BookRepository {
   }
 
   // Get all books
-  async getAllBooks(pageNumber: number = 1, pageSize: number = 7): Promise<  BookAttributes[] > {
+  async getAllBooks(pageNumber: number = 1, pageSize: number = 7, tagName:string): Promise<  BookAttributes[] > {
     try {
       const offset = (pageNumber - 1) * pageSize;
-      
       // Find all books with pagination
-      const result = await Book.findAndCountAll({
-        offset,
-        limit: pageSize,
-      });
-  
-      const books = result.rows;
-      return  books;
+      if(tagName){
+        const result = await Book.findAndCountAll({
+          where: { tag: tagName },
+          offset,
+          limit: pageSize,
+        });
+    
+        const books = result.rows;
+        return books;
+      }else{
+        const result = await Book.findAndCountAll({
+          offset,
+          limit: pageSize,
+        });
+    
+        const books = result.rows;
+        return  books;
+      }
+      
     } catch (error: any) {
       return  error.message ;
     }
@@ -40,36 +51,6 @@ class BookRepository {
       return error.message;
     }
   }
-  
-  async getBookByTag(tagName: string, pageNumber: number = 1, pageSize: number = 7):  Promise<  BookAttributes[] >  {
-    try {
-      const offset = (pageNumber - 1) * pageSize;
-  
-      const result = await Book.findAndCountAll({
-        where: { tag: tagName },
-        offset,
-        limit: pageSize,
-      });
-  
-      const books = result.rows;
-      return books;
-    } catch (error: any) {
-      return  error
-    };
-    }
-  
-  // async getbookByTag(tagName: string): Promise<Book| null> {
-  //   try {
-  //     const books = await Book.findAll({
-  //       where: { tag: tagName },
-  //     });
-  
-  //     return books;
-  //   } catch (error: any) {
-  //     return error.message;
-  //   }
-  // }
-
 }
 
 export default new BookRepository();
