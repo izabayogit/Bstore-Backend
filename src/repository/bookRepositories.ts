@@ -13,14 +13,23 @@ class BookRepository {
   }
 
   // Get all books
-  async getAllBooks(): Promise<Book[]> {
+  async getAllBooks(pageNumber: number = 1, pageSize: number = 7): Promise<  BookAttributes[] > {
     try {
-      const books = await Book.findAll();
-      return books;
+      const offset = (pageNumber - 1) * pageSize;
+      
+      // Find all books with pagination
+      const result = await Book.findAndCountAll({
+        offset,
+        limit: pageSize,
+      });
+  
+      const books = result.rows;
+      return  books;
     } catch (error: any) {
-      return error.message;
+      return  error.message ;
     }
   }
+  
 
   // Get a book by ID
   async getBookById(bookId: number): Promise<Book | null> {
@@ -32,17 +41,34 @@ class BookRepository {
     }
   }
   
-  async getbookByTag(tagName: string): Promise<Book| null> {
+  async getBookByTag(tagName: string, pageNumber: number = 1, pageSize: number = 7):  Promise<  BookAttributes[] >  {
     try {
-      const books = await Book.findAll({
+      const offset = (pageNumber - 1) * pageSize;
+  
+      const result = await Book.findAndCountAll({
         where: { tag: tagName },
+        offset,
+        limit: pageSize,
       });
   
+      const books = result.rows;
       return books;
     } catch (error: any) {
-      return error.message;
+      return  error
+    };
     }
-  }
+  
+  // async getbookByTag(tagName: string): Promise<Book| null> {
+  //   try {
+  //     const books = await Book.findAll({
+  //       where: { tag: tagName },
+  //     });
+  
+  //     return books;
+  //   } catch (error: any) {
+  //     return error.message;
+  //   }
+  // }
 
 }
 
