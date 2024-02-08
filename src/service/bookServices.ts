@@ -31,6 +31,15 @@ class BookService {
       return error.message;
     }
   }
+
+  async getBookByTag(taag: string): Promise<BookAttributes | null> {
+    try {
+    const book = await BookRepository.getbookByTag(taag);
+    return book;
+    }  catch (error: any) {
+      return error.message;
+    }
+  }
 }
 
 export default new BookService();

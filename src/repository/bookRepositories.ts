@@ -31,6 +31,18 @@ class BookRepository {
       return error.message;
     }
   }
+  
+  async getbookByTag(tagName: string): Promise<Book| null> {
+    try {
+      const books = await Book.findAll({
+        where: { tag: tagName },
+      });
+  
+      return books;
+    } catch (error: any) {
+      return error.message;
+    }
+  }
 
 }
 
