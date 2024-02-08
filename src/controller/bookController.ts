@@ -35,8 +35,9 @@ class BookController {
   }
 
   async getBookByTagController(req:Request, res:Response): Promise<void> {
+    const tag: string =  req.query.tag as string;
     try{
-      const foundBook = await BookService.getBookByTag(req.body.tag);
+      const foundBook = await BookService.getBookByTag(tag);
       // if(foundBook){
         res.status(200).json(foundBook)
       // }else{
