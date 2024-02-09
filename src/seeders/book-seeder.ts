@@ -34,7 +34,7 @@ const up = async (queryInterface: QueryInterface) => {
       {
         writer: "Alice Thompson",
         title: "Eternal Sunshine",
-        coverImage: "https://images.unsplash.com/photo-1536783105586-81998a7cf5d7?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        coverImage: "https://images.unsplash.com/photo-1545239351-cefa43af60f3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         price: 22.50,
         tag: "Science",
         createdAt: "2024-02-05T10:15:00Z",
@@ -43,7 +43,7 @@ const up = async (queryInterface: QueryInterface) => {
       {
         writer: "David Turner",
         title: "City of Shadows",
-        coverImage: "https://images.unsplash.com/photo-1521734278238-73e83fae1d8b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        coverImage: "https://images.unsplash.com/photo-1557695126-cdf320ba15fa?q=80&w=1384&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         price: 27.75,
         tag: "Non-Fiction",
         createdAt: "2024-02-04T08:30:00Z",
@@ -52,7 +52,7 @@ const up = async (queryInterface: QueryInterface) => {
       {
         writer: "Sarah Brown",
         title: "Whispers in the Wind",
-        coverImage: "https://images.unsplash.com/photo-1522542550221-31fd19575a2a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        coverImage: "https://unsplash.com/photos/macbook-pro-RARH8b7N-fw",
         price: 18.50,
         tag: "Science",
         createdAt: "2024-02-03T15:45:00Z",
@@ -61,7 +61,7 @@ const up = async (queryInterface: QueryInterface) => {
       {
         writer: "Michael White",
         title: "Echoes of Silence",
-        coverImage: "https://images.unsplash.com/photo-1512484412422-18d7f43d7d89?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        coverImage: "https://images.unsplash.com/photo-1552647513-6e7cf1a5e3e3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         price: 21.99,
         tag: "Essay",
         createdAt: "2024-02-02T12:30:00Z",
@@ -70,7 +70,7 @@ const up = async (queryInterface: QueryInterface) => {
       {
         writer: "Emily Green",
         title: "Garden of Dreams",
-        coverImage: "https://images.unsplash.com/photo-1515266591878-f94dbafaa973?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        coverImage: "https://images.unsplash.com/photo-1541523315198-a00415d424f4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         price: 26.50,
         tag: "Essay",
         createdAt: "2024-02-01T09:15:00Z",
@@ -79,7 +79,7 @@ const up = async (queryInterface: QueryInterface) => {
       {
         writer: "Robert Taylor",
         title: "The Forgotten Kingdom",
-        coverImage: "https://images.unsplash.com/photo-1523698234121-2c4c19b6c53a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        coverImage: "https://images.unsplash.com/photo-1558038785-10eab3e800ab?q=80&w=1446&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         price: 31.25,
         tag: "Fiction",
         createdAt: "2024-01-31T07:30:00Z",
@@ -88,7 +88,7 @@ const up = async (queryInterface: QueryInterface) => {
       {
         writer: "Olivia Adams",
         title: "A Symphony of Stars",
-        coverImage: "https://images.unsplash.com/photo-1527718938458-32b02f35ee1e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        coverImage: "https://images.unsplash.com/photo-1533312976185-c6f84ac1cb6a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         price: 23.75,
         tag: "Fiction",
         createdAt: "2024-01-30T05:45:00Z",
@@ -97,7 +97,7 @@ const up = async (queryInterface: QueryInterface) => {
       {
         writer: "Daniel Miller",
         title: "Crimson Horizon",
-        coverImage: "https://images.unsplash.com/photo-1524806579753-0a3b1b997c07?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        coverImage: "https://images.unsplash.com/photo-1558283039-026529d7c011?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         price: 28.99,
         tag: "Essay",
         createdAt: "2024-01-29T03:00:00Z",
@@ -106,7 +106,7 @@ const up = async (queryInterface: QueryInterface) => {
       {
         writer: "Sophie Turner",
         title: "Shadows of the Past",
-        coverImage: "https://images.unsplash.com/photo-1533686116686-a11b9d6ccf5f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        coverImage: "https://images.unsplash.com/photo-1605087156563-fdc6f3e8e6f7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         price: 20.50,
         tag: "Science",
         createdAt: "2024-01-28T00:15:00Z",
@@ -115,7 +115,7 @@ const up = async (queryInterface: QueryInterface) => {
       {
         writer: "Charlie Brown",
         title: "Sunset Serenade",
-        coverImage: "https://images.unsplash.com/photo-1523708918185-f6eaec5b11e3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        coverImage: "https://unsplash.com/photos/a-sticker-with-the-words-jesus-the-way-the-truth-the-life-john-14-6-sKUaFJRPyZA",
         price: 25.25,
         tag: "Fiction",
         createdAt: "2024-01-27T22:30:00Z",
@@ -124,7 +124,7 @@ const up = async (queryInterface: QueryInterface) => {
       {
         writer: "Edward Harris",
         title: "Silent Whispers",
-        coverImage: "https://images.unsplash.com/photo-1526659804485-009ea7883f0b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        coverImage: "https://images.unsplash.com/photo-1619164816991-22d393238d8f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         price: 30.75,
         tag: "Fiction",
         createdAt: "2024-01-26T20:45:00Z",
@@ -133,7 +133,7 @@ const up = async (queryInterface: QueryInterface) => {
       {
         writer: "Emma Clark",
         title: "Whispers of the Heart",
-        coverImage: "https://images.unsplash.com/photo-1528878292192-4c33545e8a88?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        coverImage: "https://images.unsplash.com/photo-1639690283395-b62444cf9a76?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         price: 22.99,
         tag: "Non-Fiction",
         createdAt: "2024-01-25T18:00:00Z",
@@ -142,7 +142,7 @@ const up = async (queryInterface: QueryInterface) => {
       {
         writer: "Henry Turner",
         title: "Beyond the Horizon",
-        coverImage: "https://images.unsplash.com/photo-1524494780602-2a0f31c8c075?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        coverImage: "https://images.unsplash.com/photo-1612969308146-066d55f37ccb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         price: 27.50,
         tag: "Science",
         createdAt: "2024-01-24T15:15:00Z",
@@ -151,7 +151,7 @@ const up = async (queryInterface: QueryInterface) => {
       {
         writer: "Isabel Turner",
         title: "Enchanted Forest",
-        coverImage: "https://images.unsplash.com/photo-1533729391581-7917838ae5e1?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        coverImage: "https://unsplash.com/photos/a-picture-of-a-book-on-a-red-cloth-1i-P178kxHQ",
         price: 24.25,
         tag: "Essay",
         createdAt: "2024-01-23T12:30:00Z",
@@ -160,7 +160,7 @@ const up = async (queryInterface: QueryInterface) => {
       {
         writer: "George Davis",
         title: "Echoes of Time",
-        coverImage: "https://images.unsplash.com/photo-1515476263697-fb8f0cb9f680?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        coverImage: "https://images.unsplash.com/photo-1641154748135-8032a61a3f80?q=80&w=1430&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "price": 29.99,
         tag: "Science-Fiction",
         createdAt: "2024-01-22T09:45:00Z",
@@ -169,7 +169,7 @@ const up = async (queryInterface: QueryInterface) => {
       {
         writer: "Sophia Miller",
         title: "The Crystal Shard",
-        coverImage: "https://images.unsplash.com/photo-1522542550221-31fd19575a2a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        coverImage: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=1512&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         price: 26.50,
         tag: "Fantasy",
         createdAt: "2024-01-21T07:00:00Z",
@@ -178,7 +178,7 @@ const up = async (queryInterface: QueryInterface) => {
       {
         writer: "Ryan Clark",
         title: "Dark Shadows",
-        coverImage: "https://images.unsplash.com/photo-1521159829024-a0e468112fc3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        coverImage: "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?q=80&w=1512&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         price: 23.75,
         tag: "Mystery",
         createdAt: "2024-01-20T04:15:00Z",

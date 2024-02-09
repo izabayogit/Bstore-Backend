@@ -1,5 +1,6 @@
 import BookRepository from '../repository/bookRepositories';
 import { BookAttributes } from '../entity/models/book';
+import searchRepository from '../repository/searchRepositories';
 
 class BookService {
   // Create a new book
@@ -16,6 +17,15 @@ class BookService {
   async getAllBooks(pageNumber,pageSize,tagName): Promise<BookAttributes[]> {
     try {
       const books = await BookRepository.getAllBooks(pageNumber,pageSize, tagName);
+      return books;
+    }  catch (error: any) {
+      return error.message;
+    }
+  }
+
+  async searchAllBooks(pageNumber, pageSize, search): Promise<BookAttributes[]> {
+    try {
+      const books = await searchRepository(pageNumber,pageSize, search);
       return books;
     }  catch (error: any) {
       return error.message;

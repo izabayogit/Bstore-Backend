@@ -17,9 +17,16 @@ class BookController {
     const pageNumber: number = parseInt( req.query.pageNumber as string);
     const pageSize: number = parseInt( req.query.pageSize as string);
     const tag: string =  req.query.tag as string;
+    const search: string = req.query.search as string;
     try{
-      const books = await BookService.getAllBooks(pageNumber, pageSize, tag);
-       res.status(200).json(books)
+      if(search){
+        const books= await BookService.searchAllBooks(pageNumber, pageSize, search)
+        res.status(200).json(books)
+      }else{
+        const books = await BookService.getAllBooks(pageNumber, pageSize, tag);
+        res.status(200).json(books)
+      }
+    
     }
     catch(error){
        res.status(500).json({error: error.message})
