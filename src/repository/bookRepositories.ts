@@ -25,7 +25,10 @@ class BookRepository {
         });
     
         const books = result.rows;
-        return books;
+        if(books){
+          return books;
+        }
+
       }else{
         const result = await Book.findAndCountAll({
           offset,
@@ -33,7 +36,10 @@ class BookRepository {
         });
     
         const books = result.rows;
-        return  books;
+        if(books){
+          return  books;
+        }
+     
       }
       
     } catch (error: any) {

@@ -13,7 +13,7 @@ class BookController {
     
   }
 
-  async getAllBooks(req:Request, res:Response): Promise<void> { 
+  async getAllBooks(req:Request, res:Response): Promise<Response> { 
     const pageNumber: number = parseInt( req.query.pageNumber as string);
     const pageSize: number = parseInt( req.query.pageSize as string);
     const tag: string =  req.query.tag as string;
@@ -21,10 +21,22 @@ class BookController {
     try{
       if(search){
         const books= await BookService.searchAllBooks(pageNumber, pageSize, search)
+        if(!books.length){
+           return res.status(404).json({
+            status: 404,
+            error: 'No Results Found'
+          });
+        }
         res.status(200).json(books)
       }else{
         const books = await BookService.getAllBooks(pageNumber, pageSize, tag);
-        res.status(200).json(books)
+        if(!books.length){
+          return res.status(404).json({
+           status: 404,
+           error: 'No Results Found'
+         });
+       }
+        return res.status(200).json(books)
       }
     
     }
@@ -33,12 +45,12 @@ class BookController {
     }
   }
 
-  async getBookById(req:Request, res:Response): Promise<void> {
+  async getBookById(req:Request, res:Response): Promise<Response> {
     try{
       const foundBook = await BookService.getBookById( parseFloat(req.params.id));
-       res.status(200).json(foundBook)
+       return res.status(200).json(foundBook)
     }catch(error){
-     res.status(500).json({errr: error.message})
+     return res.status(500).json({errr: error.message})
     }
     
   }
